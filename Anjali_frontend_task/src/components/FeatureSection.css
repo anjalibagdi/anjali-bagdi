@@ -1,0 +1,140 @@
+.feature-section {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 60px 40px;
+ background: linear-gradient(60deg, #E0EFFA 0%, #fff 50%);  
+
+ justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Grid for boxes */
+.features-container {
+  flex: 1;
+  max-width: 550px;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+
+}
+
+.feature-box {
+  background: #ffffff;
+  padding: 50px 30px;
+  border-radius: 12px;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+  text-align: center;
+}
+
+.feature-box:hover {
+  transform: translateY(-5px);
+}
+
+.feature-box h2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.feature-box.orange h2 {
+  color: #f59e0b;
+}
+.feature-box.red h2 {
+  color: #f97316;
+}
+.feature-box.pink h2 {
+  color: #ec4899;
+}
+.feature-box.violet h2 {
+  color: #a855f7;
+}
+
+.feature-box p {
+  font-size: 14px;
+  color: #4b5563;
+}
+
+/* Text section */
+.feature-text {
+  flex: 1;
+  max-width: 500px;
+}
+
+.subheading {
+  text-transform: uppercase;
+  font-size: 13px;
+  color: #f97316;
+  font-weight: lighter;
+  margin-bottom: 12px;
+}
+
+.feature-text h1 {
+  font-size: 36px;
+  line-height: 1.4;
+  font-weight: 800;
+  color: #111827;
+  margin-bottom: 20px;
+}
+
+.feature-text .description {
+  font-size: 15px;
+  color: #6b7280;
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
+
+.explore-btn {
+  background-color: #fef3c7;
+  color: #f59e0b;
+  font-weight: 600;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.explore-btn:hover {
+  background-color: #fde68a;
+}
+
+/* Scroll destination section */
+.next-section {
+  padding: 80px 40px;
+  background-color: #f3f4f6;
+  text-align: center;
+  min-height: 400px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+  .feature-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .features-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .feature-text {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .feature-text h1 {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 600px) {
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+}

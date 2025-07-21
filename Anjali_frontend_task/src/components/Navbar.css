@@ -1,0 +1,68 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 4rem;
+  background: linear-gradient(90deg, #E0F5FA 0%, #FFFDE6 100% );
+  font-family: "Helvetica Neue", sans-serif;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+  gap: 20rem;
+  margin-left: 10rem
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #0f2137;
+}
+
+.logo-icon {
+  margin-right: 8px;
+  color: #0f2137;
+  font-size: 1.2rem;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2.2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #0f2137;
+  cursor: pointer;
+  position: relative;
+}
+
+.try-btn {
+  background-color: #fef0e7;
+  color: #f36b25;
+  padding: 0.6rem 1.4rem;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 0.95rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  transition: background 0.2s;
+}
+
+.try-btn:hover {
+  background-color: #fde3d1;
+}
+
+.nav-icon {
+  margin-left: 4px;
+  font-size: 1rem;
+  color: #0f2137;
+}

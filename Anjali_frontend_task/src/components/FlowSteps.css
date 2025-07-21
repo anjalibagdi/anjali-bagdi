@@ -1,0 +1,84 @@
+.flow-section {
+  background: linear-gradient(10deg, #EBF9FF 100%, #F6F6FF 100% );
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.flow-subtitle {
+  color: #f59e0b;
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 8px;
+  letter-spacing: 1px;
+}
+
+.flow-title {
+  color: #0f172a;
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+.steps-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: relative;
+  gap: 40px;
+}
+
+.step-item {
+  background: transparent;
+  width: 200px;
+  position: relative;
+  text-align: center;
+}
+
+.step-circle {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 15px;
+  border-radius: 50%;
+  background: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.06);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 18px;
+  color: #0f172a;
+}
+
+.step-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #0f172a;
+  margin-bottom: 10px;
+}
+
+.step-desc {
+  font-size: 14px;
+  color: #475569;
+  line-height: 1.4;
+}
+
+/* SVG connector */
+.step-connector {
+  position: absolute;
+  right: -110px;
+  top: 25px;
+  width: 120px;
+  height: 30px;
+}
+
+@media (max-width: 900px) {
+  .step-connector {
+    display: none;
+  }
+
+  .steps-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+  }
+}

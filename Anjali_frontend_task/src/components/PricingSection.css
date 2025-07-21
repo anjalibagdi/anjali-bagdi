@@ -1,0 +1,158 @@
+/* PricingSection.css */
+.pricing-container {
+  text-align: center;
+  padding: 40px 20px;
+  font-family: 'Arial', sans-serif;
+  background-color: #fdfdfd;
+}
+
+.plan-label {
+  color: #ff914d;
+  font-weight: bold;
+  font-size: 12px;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  color: #1d1d1d;
+}
+
+.toggle-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 40px;
+}
+
+.toggle-btn {
+  border: none;
+  background-color: #f3f3f3;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.toggle-btn.active {
+  background-color: #fff;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.plans {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.plan-box {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 30px 25px;
+  width: 300px;
+  text-align: left;
+  position: relative;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.05);
+}
+
+.plan-box.premium {
+  border: 2px solid #2fd790;
+}
+
+.recommended {
+  position: absolute;
+  top: -12px;
+  left: 20px;
+  background: #ff914d;
+  color: #fff;
+  font-size: 11px;
+  padding: 4px 10px;
+  border-radius: 4px;
+}
+
+.plan-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.plan-subtitle {
+  font-size: 14px;
+  color: #888;
+  margin-bottom: 20px;
+}
+
+.price {
+  color: #777;
+  font-size: 13px;
+  margin-bottom: 20px;
+}
+
+.price span {
+  color: #2fd790;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.features {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.features li {
+  margin-bottom: 12px;
+  position: relative;
+  padding-left: 20px;
+  color: #2c2c2c;
+}
+
+.features li::before {
+  content: \"✔\";
+  position: absolute;
+  left: 0;
+  color: #2fd790;
+}
+
+.features li.disabled {
+  color: #bbb;
+}
+
+.features li.disabled::before {
+  content: \"✖\";
+  color: #ccc;
+}
+
+.action-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #ffe9d6;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  color: #d8802f;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.action-btn:hover {
+  background-color: #ffd6b2;
+}
+.icon {
+  margin-right: 10px;
+  font-size: 16px;
+  color: #2fd790;
+}
+
+.features li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+

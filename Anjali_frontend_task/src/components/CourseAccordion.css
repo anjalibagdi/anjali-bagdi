@@ -1,0 +1,129 @@
+.course-section {
+  max-width: 1000px;
+  margin: 60px auto;
+  padding: 20px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.section-subtitle {
+  text-align: center;
+  font-size: 14px;
+  color: #f97316;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 40px;
+}
+
+.course-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.course-card.open {
+  background-color: #f9fafb;
+}
+
+.course-header {
+  display: flex;
+  align-items: flex-start;
+  padding: 25px;
+  gap: 20px;
+}
+
+.course-icon {
+  flex-shrink: 0;
+  background: #fef3c7;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.play-button {
+  font-size: 20px;
+  color: #f59e0b;
+}
+
+.course-info {
+  flex-grow: 1;
+}
+
+.rating-line {
+  font-size: 14px;
+  color: #6b7280;
+  margin-bottom: 8px;
+}
+
+.course-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 5px;
+}
+
+.course-subtitle {
+  font-size: 14px;
+  color: #6b7280;
+  margin-bottom: 12px;
+}
+
+.feature-list {
+  list-style: none;
+  padding-left: 0;
+  color: #4b5563;
+  font-size: 14px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px 20px;
+}
+
+.course-meta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-left: auto;
+}
+
+.badge {
+  background-color: #10b981;
+  color: white;
+  padding: 5px 12px;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 6px;
+  margin-bottom: 6px;
+}
+
+.dropdown-icon {
+  font-size: 14px;
+  color: #6b7280;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .course-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .course-meta {
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 10px;
+  }
+}

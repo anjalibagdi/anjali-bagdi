@@ -1,0 +1,192 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, #e6f0fa, #f9f5e9);
+  color: #1a2e5a;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background: linear-gradient(to right, #e6f0fa, #f9f5e9);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #1a2e5a;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #1a2e5a;
+  font-weight: 500;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+  color: #f9c074;
+}
+
+.try-free {
+  background: #f9c074;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.3s;
+}
+
+.try-free:hover {
+  background: #f7a944;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 100px;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.hero-content {
+  max-width: 50%;
+}
+
+.rating {
+  color: #1a2e5a;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+h1 {
+  font-size: 48px;
+  color: #1a2e5a;
+  margin: 0;
+  line-height: 1.2;
+  font-weight: 800;
+}
+
+.underline {
+  width: 50px;
+  height: 4px;
+  background: #f9c074;
+  margin: 10px 0;
+}
+
+.hero-content p {
+  color: #666;
+  margin: 20px 0;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  background: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  width: 70%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin: 20px 0;
+}
+
+.search-bar input {
+  border: none;
+  outline: none;
+  flex: 1;
+  font-size: 16px;
+  color: #666;
+}
+
+.search-icon {
+  color: #1a2e5a;
+  margin-left: 10px;
+}
+
+.sponsors {
+  margin-top: 20px;
+  color: #888;
+  font-size: 14px;
+}
+
+.sponsor-logo {
+  margin-left: 10px;
+  color: #1a2e5a;
+  font-size: 16px;
+}
+
+.sponsor-logo::before {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+.sponsor-logo:nth-child(2)::before {
+  content: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%231a2e5a"%3E%3Cpath d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"/%3E%3C/svg%3E');
+}
+
+.sponsor-logo:nth-child(3)::before {
+  content: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%231a2e5a"%3E%3Cpath d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-1 16H6c-.55 0-1-.45-1-1V6c0-.55.45-1 1-1h12c.55 0 1 .45 1 1v12c0 .55-.45 1-1 1z"/%3E%3C/svg%3E');
+}
+
+.sponsor-logo:nth-child(1)::before {
+  content: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%231a2e5a"%3E%3Cpath d="M3 5v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2zm16 14H5V5h14v14z"/%3E%3C/svg%3E');
+}
+
+.hero-image {
+  position: relative;
+  max-width: 40%;
+}
+
+.hero-image img {
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 100%;
+  height: auto;
+  position: relative;
+  z-index: 1;
+}
+
+.hero-image::before {
+  content: '';
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  width: 100%;
+  height: 100%;
+  background: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"%3E%3Ccircle cx="10" cy="10" r="5" fill="%23e6f0fa" /%3E%3Ccircle cx="30" cy="30" r="5" fill="%23e6f0fa" /%3E%3Ccircle cx="50" cy="50" r="5" fill="%23e6f0fa" /%3E%3Ccircle cx="70" cy="70" r="5" fill="%23e6f0fa" /%3E%3Ccircle cx="90" cy="90" r="5" fill="%23e6f0fa" /%3E%3C/svg%3E') repeat;
+  z-index: 0;
+}
+
+.hero-image::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, #fff3e0, #fff);
+  border-radius: 10px;
+  z-index: 0;
+}
